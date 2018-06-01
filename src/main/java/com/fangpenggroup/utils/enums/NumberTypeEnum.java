@@ -1,9 +1,17 @@
 package com.fangpenggroup.utils.enums;
 
-
+/**
+ * 数字数据类型
+ */
 public enum NumberTypeEnum {
     BYTE, SHORT, INTEGER, LONG, FLOAT, DOUBLE, BIGINTEGER, BIGDECIMAL;
 
+    /**
+     * 获取数据类型
+     *
+     * @param clazz 数据类型class
+     * @return 返回枚举类型
+     */
     public static NumberTypeEnum getValue(Class clazz) {
         NumberTypeEnum numberTypeEnum = null;
         String name = clazz.getName();
